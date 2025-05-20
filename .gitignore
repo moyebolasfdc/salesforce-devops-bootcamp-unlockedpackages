@@ -7,9 +7,14 @@
 .sfdx/
 .localdevserver/
 deploy-options.json
+.forceignore
+
+# VSCode settings
+.vscode/
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
+**/lwc/.eslintrc.json
 
 # LWC Jest coverage reports
 coverage/
@@ -39,7 +44,41 @@ $RECYCLE.BIN/
 # Local environment variables
 .env
 
-# Python Salesforce Functions
-**/__pycache__/
-**/.venv/
-**/venv/
+# Salesforce Metadata Types
+force-app/main/default/apexEmailNotifications/
+force-app/main/default/samlssoconfigs/
+force-app/main/default/objectTranslations/
+force-app/main/default/flowDefinitions/
+force-app/main/default/cleanDataServices/
+force-app/main/default/managedContentTypes/
+force-app/main/default/siteDotComSites/
+force-app/main/default/matchingRules/
+force-app/main/default/duplicateRules/
+force-app/main/default/communities/
+force-app/main/default/connectedApps/
+force-app/main/default/emailservices/
+force-app/main/default/installedPackages/
+force-app/main/default/siteDotComSites/
+force-app/main/default/certs/
+
+# Salesforce specific metadata files
+force-app/main/default/objects/Task/listViews/CompletedTasks.listView-meta.xml
+force-app/main/default/objects/Task/listViews/DelegatedTasks.listView-meta.xml
+force-app/main/default/objects/Task/listViews/OpenTasks.listView-meta.xml
+force-app/main/default/objects/Task/listViews/OverdueTasks.listView-meta.xml
+force-app/main/default/objects/Task/listViews/RecurringTasks.listView-meta.xml
+force-app/main/default/objects/Task/listViews/TodaysTasks.listView-meta.xml
+force-app/main/default/objects/Task/listViews/UnscheduledTasks.listView-meta.xml
+force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml
+force-app/main/default/settings/Address.settings-meta.xml
+force-app/main/default/settings/Security.settings-meta.xml
+force-app/main/default/settings/Deployment.settings-meta.xml
+force-app/main/default/settings/Event.settings-meta.xml
+
+# Added by Illuminated Cloud
+/IlluminatedCloud/
+/out/
+target/
+/.illuminatedCloud/
+**/tsconfig*.json
+**/*.tsbuildinfo

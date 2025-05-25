@@ -74,11 +74,3 @@ force-app/main/default/settings/Address.settings-meta.xml
 force-app/main/default/settings/Security.settings-meta.xml
 force-app/main/default/settings/Deployment.settings-meta.xml
 force-app/main/default/settings/Event.settings-meta.xml
-
-# Added by Illuminated Cloud
-/IlluminatedCloud/
-/out/
-target/
-/.illuminatedCloud/
-**/tsconfig*.json
-**/*.tsbuildinfo
